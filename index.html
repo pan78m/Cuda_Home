@@ -22,21 +22,21 @@
   <link rel="stylesheet" href="vendors/css/grid.css">
   <link rel="stylesheet" href="vendors/css/circle.css">
   <!-- Resources-->
-  <link rel="stylesheet" href="resouces/css/style.css">
-  <link rel="stylesheet" href="resouces/css/responsive.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/responsive.css">
   
 </head>
 
 <body>
   <!--Start header Section-->
   <header id="home">
-    <nav class="navbar">
+    <nav>
       <div class="row">
         <a href="#">
           <img src="img/logo.png" alt="Cuda" class="logo">
         </a>
         <ul class="main-nav">
-          <li class="active"><a href="#home">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#skill">Skill</a></li>
@@ -44,6 +44,21 @@
           <li><a href="#testimonial">Testimonial</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="mobile-menu">
+          <span onclick="openNav()">&#9776;</span>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+            <div class="overlay-content ">
+              <a onclick="closeNav()" class="active" href="#home">Home</a>
+              <a onclick="closeNav()" href="#service">Services</a>
+              <a onclick="closeNav()" href="#team">Team</a>
+              <a onclick="closeNav()" href="#skill">Skill</a>
+              <a onclick="closeNav()" href="#portfolio">portfolio</a>
+              <a onclick="closeNav()" href="#testimonial">Testimonial</a>
+              <a onclick="closeNav()" href="#contact">Contact</a>
+            </div>
+         </div>
+        </div>
       </div>
     </nav>
       <div class="row">
@@ -293,7 +308,7 @@
             <img src="img/4.jpg" alt="Chanel Iman" class="about">
           </div>
             <div class="client-review">
-              <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+              <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus.”</p>
                <h3>EMMA STONE</h3>
               <span class="role">co-founder of shazam</span>
             </div>   
@@ -361,7 +376,7 @@
   <script src="vendors/js/animated-circle.js"></script>
   <script src="vendors/js/mixitup.min.js"></script>
 
-  <script src="resouces/js/main.js"></script>
+  <script src="resources/js/main.js"></script>
   
 
 </body>
